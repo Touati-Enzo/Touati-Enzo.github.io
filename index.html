@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enzo Touati — Portfolio</title>
+  <meta name="description" content="Portfolio d'Enzo Touati, étudiant BTS SIO SLAM, développeur web passionné.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link href="style.css" rel="stylesheet">
+  <script src="Script" defer></script>
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <div class="banner">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+          <span class="bracket">&lt;</span>ET<span class="bracket">/&gt;</span>
+        </a>
+
+        <button class="burger" onclick="toggleMenu()" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#presentation" class="nav-btn">Présentation</a>
+          <a href="#competences" class="nav-btn">Compétences</a>
+          <a href="#projets" class="nav-btn">Projets</a>
+          <a href="#parcours" class="nav-btn">Parcours</a>
+          <a href="#experiences" class="nav-btn">Expériences</a>
+          <a href="#veille" class="nav-btn">Veille</a>
+          <a href="CV professionnel.pdf" class="nav-btn nav-btn--cv" target="_blank">CV ↗</a>
+        </div>
+
+        <div class="nav-lang">
+          <a href="index.html" class="lang-btn active">FR</a>
+          <a href="#" class="lang-btn">EN</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== PRÉSENTATION ===== -->
+    <section id="presentation" class="hero">
+      <div class="hero-inner">
+
+        <div class="hero-text">
+          <p class="hero-tag"><span class="bracket">&lt;</span> Bienvenue <span class="bracket">/&gt;</span></p>
+          <h1 class="hero-name">Enzo <span class="hero-name--accent">Touati</span></h1>
+          <p class="hero-role">Étudiant BTS SIO <em>option SLAM</em> · Développeur Web</p>
+          <p class="hero-desc">
+            Passionné par le développement web et la programmation, je conçois applications et sites web
+            en m'appuyant sur des technologies modernes. Actuellement en 2<sup>e</sup> année au lycée René Descartes.
+          </p>
+          <div class="hero-ctas">
+            <a href="#projets" class="btn-primary">Voir mes projets</a>
+            <a href="#experiences" class="btn-ghost">Mes expériences</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/Touati-Enzo" target="_blank" title="GitHub">
+              <img src="Images/logo_gihtub.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/enzo-touati-210253333/" target="_blank" title="LinkedIn">
+              <img src="Images/logo_linkedin.webp" alt="LinkedIn">
+            </a>
+            <a href="mailto:enzo@example.com" title="Email">
+              <img src="Images/Logo_gmail.png" alt="Email">
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <div class="hero-photo-ring">
+            <img src="Images/photo.jpg" alt="Photo d'Enzo Touati">
+          </div>
+          <div class="hero-badge">BTS SIO<br><strong>SLAM</strong></div>
+        </div>
+
+      </div>
+      <a href="#competences" class="hero-scroll" aria-label="Défiler">↓</a>
+    </section>
+
+    <!-- ===== COMPÉTENCES ===== -->
+    <section id="competences" class="section bg-dark-2">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">Stack technique</span>
+          <h2>Mes Compétences</h2>
+        </div>
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <img src="Images/html5-brands-solid-full.svg" alt="HTML5">
+            <span class="skill-name">HTML5</span>
+            <span class="skill-level">Avancé</span>
+          </div>
+          <div class="skill-card">
+            <img src="Images/css3-alt-brands-solid-full.svg" alt="CSS3">
+            <span class="skill-name">CSS3</span>
+            <span class="skill-level">Avancé</span>
+          </div>
+          <div class="skill-card">
+            <img src="Images/python-brands-solid-full.svg" alt="Python">
+            <span class="skill-name">Python</span>
+            <span class="skill-level">Intermédiaire</span>
+          </div>
+          <div class="skill-card">
+            <img src="Images/php-brands-solid-full.svg" alt="PHP">
+            <span class="skill-name">PHP</span>
+            <span class="skill-level">Intermédiaire</span>
+          </div>
+          <div class="skill-card">
+            <img src="Images/java-brands-solid-full.svg" alt="Java">
+            <span class="skill-name">Java</span>
+            <span class="skill-level">Intermédiaire</span>
+          </div>
+          <div class="skill-card">
+            <img src="Images/database-solid-full.svg" alt="MySQL">
+            <span class="skill-name">MySQL</span>
+            <span class="skill-level">Intermédiaire</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETS ===== -->
+    <section id="projets" class="section bg-dark-1">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">Ce que j'ai réalisé</span>
+          <h2>Mes Projets</h2>
+        </div>
+        <div class="projects-grid">
+
+          
+          <div class="project-card">
+            <div class="project-img">
+              <img src="Images/Calculatrice.png" alt="Calculatrice Java">
+              <div class="project-hover">
+                <a href="https://github.com/Touati-Enzo/Mes-Projets-BTS-SIO/tree/main/TPJavaFx_Calculatrice" class="project-hover-btn" target="_blank">Voir le projet ↗</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span>Java</span><span>MySQL</span>
+              </div>
+              <h3>Calculatrice Java</h3>
+              <p>Calculatrice simple développée en Java avec interface graphique.</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">
+              <img src="Images/ProjetCVVEN.png" alt="Projet CVVEN">
+              <div class="project-hover">
+                <a href="https://github.com/Touati-Enzo/Mes-Projets-BTS-SIO/tree/main/ProjetCVVEN" target="_blank" class="project-hover-btn">Voir le projet ↗</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span>PHP</span><span>MySQL</span><span>HTML/CSS</span>
+              </div>
+              <h3>Projet CVVEN</h3>
+              <p>Système de réservation complet avec gestion des sessions, niveaux d’autorité (utilisateur/admin), base de données sécurisée et interface responsive.</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">
+              <img src="Images/Catalogue.png" alt="Catalogue de produits">
+              <div class="project-hover">
+                <a href="https://github.com/Touati-Enzo/Mes-Projets-BTS-SIO/tree/main/Catalogue"  target="_blank" class="project-hover-btn">Voir le projet ↗</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span>Java</span><span>MySQL</span>
+              </div>
+              <h3>Catalogue de produits</h3>
+              <p>Catalogue de produits en Java avec authentification utilisateur, gestion du mot de passe, changement de session et consultation des produits.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PARCOURS ===== -->
+    <section id="parcours" class="section bg-dark-2">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">Formation</span>
+          <h2>Mon Parcours</h2>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="tl-dot"></div>
+            <div class="tl-date">2022 — 2024</div>
+            <div class="tl-card">
+              <div class="tl-card-head">
+                <div>
+                  <h3>Baccalauréat STMG</h3>
+                  <p class="tl-school">
+                    <a href="https://lpohdb.fr/" target="_blank">Lycée Honoré de Balzac</a>
+                    — Mitry-Mory (77)
+                  </p>
+                </div>
+                <span class="tl-badge">🎓 Mention Assez Bien</span>
+              </div>
+              <p class="tl-desc">
+                Formation en Sciences et Technologies du Management et de la Gestion,
+                spécialité Systèmes d'Information de Gestion. Bases de programmation,
+                gestion des organisations et découverte des réseaux informatiques.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-dot tl-dot--on"></div>
+            <div class="tl-date">2024 — 2026</div>
+            <div class="tl-card tl-card--on">
+              <div class="tl-card-head">
+                <div>
+                  <h3>BTS SIO <span class="tl-opt">option SLAM</span></h3>
+                  <p class="tl-school">
+                    <a href="https://www.rene-descartes.fr/" target="_blank">Lycée René Descartes</a>
+                    — Champs-sur-Marne (77)
+                  </p>
+                </div>
+                <span class="tl-badge tl-badge--on">📍 En cours — 2ᵉ année</span>
+              </div>
+              <p class="tl-desc">
+                BTS Services Informatiques aux Organisations, spécialité Solutions Logicielles et
+                Applications Métiers. Développement full-stack (HTML, CSS, JS, PHP, Java),
+                bases de données MySQL, gestion de projets et stages en entreprise.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPÉRIENCES ===== -->
+    <section id="experiences" class="section bg-dark-1">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">Terrain</span>
+          <h2>Mes Expériences Professionnelles</h2>
+        </div>
+        <div class="xp-grid">
+
+          <div class="xp-card">
+            <div class="xp-top">
+              <span class="xp-type">Stage</span>
+              <span class="xp-stack">HTML · CSS · JavaScript</span>
+            </div>
+            <h3 class="xp-name">BritishLoveDaline</h3>
+            <p class="xp-link"><a href="https://britishlovedaline.fr" target="_blank">britishlovedaline.fr ↗</a></p>
+            <p class="xp-role">Développeur Web Front-End</p>
+            <p class="xp-desc">
+              Conception et développement complet d'un site vitrine de vente de chats de race British.
+              Réalisation des pages en HTML, CSS et JavaScript, puis mise en ligne du site.
+            </p>
+            <ul class="xp-list">
+              <li>Conception des pages (HTML, CSS, JavaScript)</li>
+              <li>Design responsive multi-support</li>
+              <li>Mise en ligne du site <strong>britishlovedaline.fr</strong></li>
+            </ul>
+          </div>
+
+          <div class="xp-card">
+            <div class="xp-top">
+              <span class="xp-type">Stage</span>
+              <span class="xp-stack">Python · IA · Data</span>
+            </div>
+            <h3 class="xp-name">Zemus</h3>
+            <p class="xp-link">Moteur de recherche international</p>
+            <p class="xp-role">Développeur — IA & Data</p>
+            <p class="xp-desc">
+              Utilisation de l'intelligence artificielle pour collecter des informations sur tous les pays
+              du monde et alimenter un moteur de recherche permettant de naviguer d'un pays à l'autre.
+            </p>
+            <ul class="xp-list">
+              <li>Collecte de données via IA sur tous les pays</li>
+              <li>Structuration et nettoyage des données</li>
+              <li>Développement du moteur de recherche international</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VEILLE ===== -->
+    <section id="veille" class="section bg-dark-2">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">Actualités tech</span>
+          <h2>Ma Veille Technologique</h2>
+          <p class="section-subtitle">
+            Suivi régulier des évolutions en développement web, intelligence artificielle et cybersécurité.
+          </p>
+        </div>
+        <div class="veille-grid">
+
+          <div class="veille-card">
+            <div class="veille-emoji">🤖</div>
+            <h3>Intelligence Artificielle</h3>
+            <p>Avancées en IA générative (LLM, génération d'images), intégration dans les outils de développement et usages métiers.</p>
+            <div class="veille-sources"><span>Sources :</span> MIT Technology Review, Hugging Face Blog</div>
+          </div>
+
+          <div class="veille-card">
+            <div class="veille-emoji">🌐</div>
+            <h3>Développement Web</h3>
+            <p>Nouvelles versions des frameworks, standards W3C, bonnes pratiques d'accessibilité et de performance.</p>
+            <div class="veille-sources"><span>Sources :</span> MDN Web Docs, CSS-Tricks, Dev.to</div>
+          </div>
+
+          <div class="veille-card">
+            <div class="veille-emoji">🔐</div>
+            <h3>Cybersécurité</h3>
+            <p>Failles publiées, bonnes pratiques de sécurisation des applications web (OWASP Top 10, injections SQL, XSS…).</p>
+            <div class="veille-sources"><span>Sources :</span> OWASP, ANSSI, Cert-FR</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo">
+        <span class="bracket">&lt;</span>ET<span class="bracket">/&gt;</span>
+      </a>
+      <nav class="footer-nav">
+        <a href="#presentation">Présentation</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#parcours">Parcours</a>
+        <a href="#experiences">Expériences</a>
+        <a href="#veille">Veille</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://github.com/Touati-Enzo" target="_blank"><img src="Images/logo_gihtub.png" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/enzo-touati-210253333/" target="_blank"><img src="Images/logo_linkedin.webp" alt="LinkedIn"></a>
+        <a href="mailto:enzo@example.com"><img src="Images/Logo_gmail.png" alt="Email"></a>
+      </div>
+      <p class="footer-copy">© 2026 Enzo Touati — Tous droits réservés</p>
+    </div>
+  </footer>
+
+</body>
+</html>

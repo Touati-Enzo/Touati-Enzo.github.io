@@ -1,0 +1,32 @@
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("open");
+}
+
+// Ferme le menu mobile quand on clique sur un lien
+document.querySelectorAll('.nav-btn').forEach(function(link) {
+    link.addEventListener('click', function() {
+        document.getElementById("navLinks").classList.remove("open");
+    });
+});
+
+// Active le lien courant dans la navbar au scroll
+const sections = document.querySelectorAll('section[id]');
+const navBtns  = document.querySelectorAll('.nav-btn');
+
+window.addEventListener('scroll', function() {
+    let scrollY = window.pageYOffset;
+    sections.forEach(function(section) {
+        const sectionTop    = section.offsetTop - 100;
+        const sectionHeight = section.offsetHeight;
+        const sectionId     = section.getAttribute('id');
+
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            navBtns.forEach(function(btn) {
+                btn.classList.remove('active');
+                if (btn.getAttribute('href') === '#' + sectionId) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+    });
+});
