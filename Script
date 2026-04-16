@@ -30,3 +30,47 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+
+// ================================================================
+//  MODAL RSS  —  flux définis ici, non modifiables par les visiteurs
+// ================================================================
+
+// ➜ Ajoutez ou retirez vos flux dans ce tableau :
+var RSS_FEEDS = [
+    { label: 'DeepMind',        url: 'https://deepmind.com/blog/feed/basic/' },
+    { label: 'Hugging Face - Blog', url: 'https://huggingface.co/blog/feed.xml' },
+    { label: 'OpenAI News',   url: 'https://openai.com/blog/rss.xml' },
+    { label: 'Stack Overflow Blog',   url: 'https://stackoverflow.blog/feed/' },
+    { label: 'The GitHub Blog',              url: 'https://github.blog/feed/' }
+];
+
+function openRSSModal() {
+    document.getElementById('rssModal').classList.add('open');
+    renderRSSFeeds();
+}
+
+function closeRSSModal(e) {
+    if (!e || e.target === document.getElementById('rssModal')) {
+        document.getElementById('rssModal').classList.remove('open');
+    }
+}
+
+function renderRSSFeeds() {
+    var list = document.getElementById('rssList');
+    list.innerHTML = '';
+    RSS_FEEDS.forEach(function(feed) {
+        var li = document.createElement('li');
+        li.className = 'rss-list-item';
+        li.innerHTML =
+            '<span class="rss-item-label">' + feed.label + '</span>' +
+            '<a href="' + feed.url + '" target="_blank" rel="noopener" class="rss-item-link" title="' + feed.url + '">Ouvrir ↗</a>';
+        list.appendChild(li);
+    });
+}
+
+// Fermer le modal avec Échap
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        document.getElementById('rssModal').classList.remove('open');
+    }
+});
